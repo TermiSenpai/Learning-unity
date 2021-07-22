@@ -8,6 +8,8 @@ public class playerController : MonoBehaviour
     public float verticalInput;
     public float movementSpeed = 10.0f;
     public float rangoX = 20.0f;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +19,17 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
+        
+        float horizontalMovement = horizontalInput * Time.deltaTime * movementSpeed;
+        float verticalMovement = verticalInput * Time.deltaTime * movementSpeed;
+        
         //mover al jugador horizontalmente
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * movementSpeed);
+        transform.Translate(Vector3.right * horizontalMovement);
         //Mover al jugador verticalmente
-        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * movementSpeed);
+        transform.Translate(Vector3.forward * verticalMovement);
 
         //limites del jugador
         limitX();
