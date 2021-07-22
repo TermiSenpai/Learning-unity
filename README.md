@@ -1,1 +1,1 @@
-unity game 2
+This repository is only for personal education purpose to use git with unity proyects.
