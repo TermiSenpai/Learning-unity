@@ -9,6 +9,9 @@ public class playerController : MonoBehaviour
     public float movementSpeed = 10.0f;
     public float rangoX = 20.0f;
     public GameObject proyectilPrefab;
+    public GameObject cookie;
+
+    
 
 
     // Start is called before the first frame update
@@ -23,6 +26,10 @@ public class playerController : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Space))
         {
             Instantiate(proyectilPrefab, transform.position, proyectilPrefab.transform.rotation);
+        }
+        if(Input.GetKeyUp(KeyCode.Return))
+        {
+            Instantiate(cookie, transform.position, cookie.transform.rotation);
         }
 
         horizontalInput = Input.GetAxis("Horizontal");
