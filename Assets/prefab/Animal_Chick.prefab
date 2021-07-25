@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 655089411135889994}
   - component: {fileID: 655089411125936900}
   - component: {fileID: 655089411010614280}
+  - component: {fileID: 517465375}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -153,6 +154,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodSpeed: 4
+--- !u!114 &517465375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655089411135421106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0de3d17bd3f10946bfe88eff213999e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &655089411135422138
 GameObject:
   m_ObjectHideFlags: 0
