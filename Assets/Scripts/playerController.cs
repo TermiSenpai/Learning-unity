@@ -6,7 +6,7 @@ public class playerController : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
-    public float movementSpeed = 10.0f;
+    public float movementSpeed = 15.0f;
     public float rangoX = 20.0f;
     public GameObject proyectilPrefab;
     public GameObject cookie;
@@ -23,11 +23,12 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Space))
+
+        if(Input.GetKeyUp(KeyCode.Mouse0))
         {
             Instantiate(proyectilPrefab, transform.position, proyectilPrefab.transform.rotation);
         }
-        if(Input.GetKeyUp(KeyCode.Return))
+        if(Input.GetKeyUp(KeyCode.Mouse1))
         {
             Instantiate(cookie, transform.position, cookie.transform.rotation);
         }
