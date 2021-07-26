@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class frontMovement : MonoBehaviour
 {
-    public float foodSpeed = 40f;
+    public float movementSpeed = 40f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class frontMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * foodSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
     }
 }
