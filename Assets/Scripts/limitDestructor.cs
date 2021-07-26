@@ -5,7 +5,7 @@ using UnityEngine;
 public class limitDestructor : MonoBehaviour
 {
     float limitUp = 30;
-    float limitDown = -14;
+    float limitDown = -5;
 
     // Start is called before the first frame update
     void Start()
