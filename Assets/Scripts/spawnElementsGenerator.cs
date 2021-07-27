@@ -28,11 +28,16 @@ public class spawnElementsGenerator : MonoBehaviour
     void animalPositionGenerator()
     {
         indexAnimal = Random.Range(0, animalArray.Length);
-        spawnPositionX = Random.Range(-15, 15);
-        spawnPositionZ = Random.Range(29, 15);
+        spawnPositionX = randomPosGenerator(-15, 15);
+        spawnPositionZ = randomPosGenerator(29, 15);
         Vector3 positionGenerator = new Vector3(spawnPositionX, 0, spawnPositionZ);
 
         Instantiate(animalArray[indexAnimal], positionGenerator, animalArray[indexAnimal].transform.rotation);
+    }
+    
+    int randomPosGenerator(int min, int max)
+    {
+        return Random.Range(min, max);
     }
 
 }
