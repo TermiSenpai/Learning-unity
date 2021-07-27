@@ -16,9 +16,14 @@ public class limitDestructor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z > limitUp || transform.position.z < limitDown)
+        if (transform.position.z > limitUp )
         {
             Destroy(gameObject);
+        }
+        else if (transform.position.z < limitDown)
+        {
+            Destroy(gameObject);
+            Debug.Log("Fin de partida");
         }
     }
 }
